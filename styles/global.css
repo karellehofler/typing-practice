@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&family=Zilla+Slab:ital,wght@0,700;1,300&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Zilla Slab', serif;
+}
+
+p, body, html {
+    font-family: 'Andika New Basic', sans-serif;
+}
