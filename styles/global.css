@@ -3,10 +3,47 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&family=Zilla+Slab:ital,wght@0,700;1,300&display=swap');
 
-h1, h2, h3 {
-    font-family: 'Zilla Slab', serif;
-}
 
-p, body, html {
-    font-family: 'Andika New Basic', sans-serif;
+@layer base {
+    h1, h2, h3 {
+        font-family: 'Zilla Slab', serif;
+    }
+    
+    h1 {
+        font-weight: 700;
+        @apply text-5xl;
+    }
+    
+    p, body, html {
+        font-family: 'Andika New Basic', sans-serif;
+        @apply text-lg;
+        @apply text-gray-800;
+    }
+    
+    
+    .typing-content {
+        font-family: 'Andika New Basic', sans-serif;
+        letter-spacing: 0.2rem;
+        line-height: 1.8rem;
+    }
+    
+    .Char {
+        white-space: pre;
+    }
+
+    .incorrect {
+        color: red;
+        background: lightcoral;
+    }
+    
+    .correct {
+        @apply text-green-500;
+        background: lightgreen;
+    }
+
+    .current-char {
+        @apply text-blue-500;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+    }
 }
